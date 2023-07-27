@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FeedbackWidgetResult} from './Statistics.styled';
+import { FeedbackWidgetResult } from './Statistics.styled';
 
-const Statistics = ({ good, neutral, bad, totalFeedback, positiveFeedback }) => {
+const Statistics = ({
+  good,
+  neutral,
+  bad,
+  totalFeedback,
+  positiveFeedback,
+}) => {
   return (
     <FeedbackWidgetResult className="FeedbackWidget__results">
       <li className="FeedbackWidget__result">Good: {good}</li>
